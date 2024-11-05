@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>不忘百年初心，继续砥砺前行!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <img src="images/head.png" alt="">
+        </div>
+        <a name="aaa"></a>
+        <div class="meau">
+            <div class="minmeau">
+                <ul>
+                    <li><a href="#">本站首页</a></li>
+                    <li><a href="#aaa">党建要闻</a></li>
+                    <li><a href="#bbb">贯彻学习</a></li>
+                    <li><a href="#ccc">甘农行动</a></li>
+                    <li><a href="#ddd">红色展厅</a></li>
+                    <li><a href="#eee">党史资料</a></li>
+                    <li><a href="#fff">红色影像</a></li>
+                    <li><a href="#ggg">学习交流</a></li>
+
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="bigdiv">
+
+            <div class="bu1">
+                <p>凝心聚力推动改革行稳致远</p>
+            </div>
+            <div class="first">
+                <div class="box">
+                    <a href="" id="url"><img src="images/a1.jpg" alt="" id="img1"></a>
+                    <div class="left" id="left">
+                        <!-- <pan class="le"></pan> -->
+                    </div>
+                    <div class="right" id="right">
+                        <!-- <pan class="ri"></pan> -->
+                    </div>
+                    <div class="text" id="text">习近平：深入学习贯彻党的二十届三中全会精神 凝心聚力推动改革行稳致远</div>
+                </div>
+                <script>
+                    var box = document.getElementById('box');
+                    var img = document.getElementById('img1');
+                    var a = document.getElementById('url');
+                    var left = document.getElementById('left');
+                    var right = document.getElementById('right');
+                    var arr_img = ['images/a1.jpg', 'images/a2.jpg', 'images/a3.jpg', 'images/a4.jpg', 'images/a5.jpg'];
+                    var arr_text = ['习近平：扭住目标不放松 一张蓝图绘到底 在中国式现代化建设中奋勇争先', '习近平总书记关心城市建设的故事', '推动改革见实效 习近平要求强化这一机制', '习近平出席“金砖+”领导人对话会并发表重要讲话', '习近平：深入学习贯彻党的二十届三中全会精神 凝心聚力推动改革行稳致远',];
+                    var arr_url = ['#', '#', '#', '#', '#',];
+                    var currentIndex = 1;
+
+                    function slide() {
+                        a.href = arr_url[currentIndex];
+                        img.src = arr_img[currentIndex];
+                        text.innerText = arr_text[currentIndex]
+                        currentIndex = ++currentIndex % 5;
+
+                    }
+                    var pause = setInterval(slide, 2000);
+                    box.addEventListener('mouseover', function () {
+                        clearInterval(pause);
+
+                    });
+                    box.addEventListener('mouseout', function () {
+                        pause = setInterval(slide, 2000);
+                    })
+                    left.addEventListener('click', function () {
+                        currentIndex = --currentIndex % 5;
+                        if (currentIndex < 0) {
+                            currentIndex += 5;
+                        }
+                        img.src = arr_img[currentIndex];
+                        text.innerText = arr_text[currentIndex];
+                    })
+                    right.addEventListener('click', function () {
+                        currentIndex = ++currentIndex % 5;
+                        img.src = arr_img[currentIndex];
+                        text.innerText = arr_text[currentIndex];
+                    })
+                </script>
+                <div class="box1">
+                    <div class="box1_1">
+                        <a href="http://www.dangjian.cn/?p=2463">更多>></a>
+                    </div>
+                    <div class="box1_2">
+                        <ul>
+                            <li>
+                                <span>2024-10-29</span>
+                                <a href="http://www.qstheory.cn/qshyjx/2024-11/01/c_1130215469.htm">牢牢把握守正创新重大原则</a>
+                            </li>
+                            <li>
+                                <span>2024-10-27</span>
+                                <a href="http://www.qstheory.cn/wp/2024-10/27/c_1130213720.htm">中国式现代化，民生为大</a>
+                            </li>
+                            <li>
+                                <span>2024-10-22</span>
+                                <a
+                                    href="https://www.12371.cn/2024/07/21/ARTI1721551217863166.shtml">三中全会后的考察，传递了改革永远在路上的鲜明信号</a>
+                            </li>
+                            <li>
+                                <span>2024-10-17</span>
+                                <a
+                                    href="http://www.dangjian.cn/djyw/2024/10/17/detail_202410177001339.html">习近平回信勉励中国国际大学生创新大赛参赛学生代表</a>
+                            </li>
+                            <li>
+                                <span>2024-07-23</span>
+                                <a href="https://www.12371.cn/2024/07/19/ARTI1721351447866889.shtml"
+                                    target="blank">党的二十届三中全会精神学习资料</a>
+                            </li>
+
+                            <li>
+                                <span>2024-10-16</span>
+                                <a
+                                    href="http://www.dangjian.cn/djyw/2024/10/16/detail_202410167001274.html">习近平向美中关系全国委员会2024年度颁奖晚宴致贺信</a>
+                            </li>
+                            <li>
+                                <span>2024-10-14</span>
+                                <a href="http://www.dangjian.cn/djyw/2024/10/14/detail_202410147001088.html">各地积极开展基层宣讲
+                                    推动全会精神深入人心</a>
+                            </li>
+                            <li>
+                                <span>2024-09-12</span>
+                                <a
+                                    href="http://www.news.cn/politics/xxjxs/20240912/b83701c41b5645dd80a08207e3063643/c.html">心系陇原大地——习近平总书记和甘肃的故事</a>
+                            </li>
+                            <li>
+                                <a name="bbb"></a>
+                                <span>2021-09-12</span>
+                                <a
+                                    href="http://www.news.cn/politics/xxjxs/20240912/b472843713254205ab878418f7cf4133/c.html">习近平总书记推动黄河保护发展的故事</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="second">
+
+                <div class="box2_1">
+
+                </div>
+                <div class="box2_2">
+                    <div class="box2_2_left">
+                        <ul>
+                            <li>
+                                <a
+                                    href="https://www.gov.cn/zhengce/content/202410/content_6983485.htm">国务院办公厅印发《关于加快完善生育支持政策体系推动建设生育友好型社会的若干措施》的通知</a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.gov.cn/zhengce/zhengceku/202410/content_6983622.htm">农业农村部：关于印发《全国智慧农业行动计划(2024—2028年)》的通知</a>
+                            </li>
+                            <li>
+                                <a href="https://tougao.12371.cn/gaojian.php?tid=5798368">“点线面”联动发力 打破党员教育壁垒</a>
+                            </li>
+                            <li>
+                                <a href="https://tougao.12371.cn/gaojian.php?tid=5995382">三个“坚持”让党纪学习教育“不打烊”</a>
+                            </li>
+                            <li>
+                                <a href="https://www.12371.cn/2024/09/25/ARTI1727270143110992.shtml">李干杰:
+                                    用改革精神和严的标准做好新时代干部监督工作</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box2_2_right">
+                        <ul>
+                            <li>
+                                <a href="https://www.gsau.edu.cn/info/1278/35399.htm">
+                                    <div class="box2_2_right_imgbox "><img src="images/gcxx1.jpg" alt=""></div>
+                                    <p>学校召开党委理论学习中心组学习（扩大）会</p>
+                                </a>
+                                <span>10月31日下午，学校党委书记赵凯在逸夫科技馆8号会议室主持召开党委理论学习中心组学习（扩大）会。会议围绕“深入学习贯彻习近平总书记视察甘肃重要讲话重要指示精神和全国教育大会精神，推进学校教育事业提质增效”主题开展专题学习和研讨。
+                                </span>
+                            </li>
+                            <li>
+                                <a href="https://www.gsau.edu.cn/info/1278/34679.htm">
+                                    <div class="box2_2_right_imgbox "><img src="images/gcxx2.jpg" alt=""></div>
+                                    <p>校党委书记赵凯参加中国—中东欧国家现代农业...</p>
+                                </a>
+                                <span>10月16日-18日，学校党委书记赵凯赴山东参加中国—中东欧国家现代农业科教创新联盟成立大会，并赴山东农业大学调研交流。</span>
+                            </li>
+                            <li>
+                                <a href="https://www.gsau.edu.cn/info/1278/33709.htm">
+                                    <div class="box2_2_right_imgbox "><img src="images/gcxx3.jpg" alt=""></div>
+                                    <p>柴守玺教授做客央视</p>
+                                </a>
+                                <span>9月30日晚8点，中央广播电视总台《“中国梦·家国情”2024国庆特别节目》正式播出，全国政协委员、农业农村部小麦专家组成员、我校农学院教授柴守玺作为中国小麦育种团队成员登上央视舞台。</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box2_3">
+                    <a href="https://www.gsau.edu.cn/xwzx/xxyw.htm">查看更多>></a>
+
+                </div>
+                <a name="ccc"></a>
+            </div>
+            <div class="third">
+                <div class="box3">
+                    <div class="box3_1"></div>
+                    <div class="box3_2">
+
+                        <div class="video-name"> <a href="https://szw.gsau.edu.cn/info/1012/6381.htm">立德树人守初心
+                                强农报国向未来</a></div>
+                        <video src="video/1.mp4" poster="images/2.png" controls width="550" webkit-playsinline="true"
+                            playsinline="true"></video>
+                        <div class="video-text">
+                            甘肃农业大学积极响应国家乡村振兴战略，以立德树人为根本，以强农兴农为己任，致力于服务现代农业发展和乡村振兴。学校深入学习贯彻习近平总书记给全国涉农高校书记校长和专家代表的重要回信精神，通过“四个结合”将回信精神内化于心、外化于行，增强为党育人、为国育才的政治自觉、思想自觉和行动自觉
+                        </div>
+                    </div>
+                    <div class="box3_3">
+                        <div class="box-title">
+                            <p>理论学习</p>
+                        </div>
+                        <div class="box3-text">
+                            <ul>
+                                <li><a href="https://www.gsau.edu.cn/info/1278/35399.htm">学校召开党委理论学习中心组学习（扩大）会</a></li>
+                                <li><a href="https://www.gsau.edu.cn/info/1278/33369.htm">校党委理论学习中心组专题学习习近平法治思想</a></li>
+                                <li><a
+                                        href="https://www.gsau.edu.cn/info/1278/32759.htm">学校举办学习贯彻党的二十届三中全会精神省级示范宣讲报告会</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="box-title">
+                            <p>基层动态</p>
+                        </div>
+                        <div class="box3-text">
+                            <ul>
+                                <li><a href="https://www.gsau.edu.cn/info/1278/33299.htm">万人同上一堂思政课 农大学子强农兴农显担当</a></li>
+                                <li><a
+                                        href="https://www.gsau.edu.cn/info/1278/32549.htm">习近平总书记在全国教育大会上的重要讲话在甘肃农业大学引起热烈反响</a>
+                                </li>
+                                <li><a
+                                        href="https://www.gsau.edu.cn/info/1278/30239.htm">学校获评“全国党建工作标杆院系”“全国党建工作样板支部”培育创建单位</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="box-title">
+                            <p>先锋模范</p>
+                        </div>
+                        <div class="box3-text">
+                            <ul>
+                                <li><a href="https://www.gsau.edu.cn/info/1281/34829.htm">【榜样引领】立足西北寒旱农业 护驾国家粮食安全</a>
+                                </li>
+                                <li><a href="https://www.gsau.edu.cn/info/1278/32279.htm">【礼赞教师】立德树人担当奋进 强农兴农筑梦前行</a>
+                                </li>
+                                <li><a href="https://www.gsau.edu.cn/info/1278/30535.htm">【榜样引领】匠心育人润桃李 潜心科研寸草心</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="box3_4">
+                        <a href="https://szw.gsau.edu.cn/index.htm">查看更多>></a>
+                        <a name="ddd"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="fourth">
+                <div class="slide-content">
+                    <div class="slide-title"></div>
+                    <div class="slide-item">
+                        <div class="slide-item-box">
+                            <div class="hd">
+                                <a href="javascript:;" class="prev prev-bg"></a>
+                                <a href="javascript:;" class="next next-bg"></a>
+                            </div>
+                            <div class="bd slide-item-body">
+                                <ul class="clearfix" style="overflow:visible">
+                                    <li>
+                                        <a href="https://www.1937china.com/">
+                                            <div class="new-img">
+                                                <img src="images/t1.png" alt="">
+                                            </div>
+                                            <div class="new-body">
+                                                <p class="new-body-title">中国人民抗日战争纪念馆</p>
+                                                <p class="new-body-text">
+                                                    中国人民抗日战争纪念馆建成于1987年，是中国唯一一座全面反映中国人民伟大抗日战争历史的大型综合性专题纪念馆。建馆以来，中国人民抗日战争纪念馆广泛传播抗战历史，大力弘扬伟大的抗战精神。
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.balujun.cn/">
+                                            <div class="new-img">
+                                                <img src="images/t2.png" alt="">
+                                            </div>
+                                            <div class="new-body">
+                                                <p class="new-body-title">八路军太行纪念馆</p>
+                                                <p class="new-body-text">
+                                                    八路军太行纪念馆坐落于太行山区、八路军的故乡——风景秀丽的山西省武乡县城西，1988年9月3日中国人民抗日战争胜利43周年之际，正式建成并对公众开放，邓小平同志亲笔题写了馆名。2005年8月15日，纪念馆二期扩建工程胜利竣工，《八路军抗战史陈列》大型主题展览正式开幕。
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.xbpjng.cn/">
+                                            <div class="new-img">
+                                                <img src="images/t3.png" alt="">
+                                            </div>
+                                            <div class="new-body">
+                                                <p class="new-body-title">西柏坡纪念馆</p>
+                                                <p class="new-body-text">
+                                                    西柏坡位于河北省平山县中部，是解放战争时期中央工委、中共中央和解放军总部的所在地。1947年5月，刘少奇、朱德率中央工委进驻西柏坡。1948年5月，毛泽东、周恩来、
+                                                    任弼时率中央前委和解放军总部到西柏坡与中央工委汇合。</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.zgyd1921.com/about.html">
+                                            <div class="new-img">
+                                                <img src="images/t4.png" alt="">
+                                            </div>
+                                            <div class="new-body">
+                                                <p class="new-body-title">中共一大会址纪念馆</p>
+                                                <p class="new-body-text">
+                                                    1921年7月23日，中国共产党第一次全国代表大会在这里召开，来自7个共产党早期组织的13位代表与2位共产国际代表出席会议。会议宣告了中国共产党的正式成立。
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.n4a.org.cn/">
+                                            <div class="new-img">
+                                                <img src="images/t5.png" alt="">
+                                            </div>
+                                            <div class="new-body">
+                                                <p class="new-body-title">新四军纪念馆</p>
+                                                <p class="new-body-text">
+                                                    新四军纪念馆位于江苏省盐城市建军东路159号，是全面、系统地反映新四军抗战征程的综合性纪念馆，全馆由主馆区、重建军部纪念塔和重建军部旧址（泰山庙）三个部分组成，占地120余亩，建筑面积1.3万多平方米，展览面积9000多平方米，馆藏新四军抗战文物、史料、藏品、书画作品等1万余件（幅）。
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.19371213.com.cn/">
+                                            <div class="new-img">
+                                                <img src="images/t6.png" alt="">
+                                            </div>
+                                            <div class="new-body">
+                                                <p class="new-body-title">侵华日军南京大屠杀遇难同胞纪念馆</p>
+                                                <p class="new-body-text">
+                                                    华日军南京大屠杀遇难同胞纪念馆于1985年8月15日正式建成开放，该馆坐落于南京大屠杀江东门集体屠杀的“万人坑”遗址之上，是首批国家级抗战纪念设施、遗址和国家一级博物馆。
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <a name="eee"></a>
+                    <div class="slide-links">
+                        <a href="http://v.people.cn/GB/61600/437331/index.html">更多信息</a>
+
+                    </div>
+
+                </div>
+
+                <script type="text/javascript">
+                    jQuery(".slide-item-box").slide({
+                        titCell: ".hd ul",
+                        mainCell: ".bd ul",
+                        autoPage: true,
+                        effect: "leftLoop",
+                        autoPlay: true,
+                        scroll: 3,
+                        vis: 3,
+                        delayTime: 700,
+                        trigger: "click"
+                    })
+                </script>
+            </div>
+            <div class="fifth">
+                <div class="box5-title"></div>
+                <div class="box5-left">
+                    <div class="box5-1">
+                        <p>党史问答</p>
+                        <ul>
+                            <li><a href="">十八大以来的历史性成就体现在哪些方面</a></li>
+                            <li><a href="">遵义会议为何是中国共产党生死攸关的转折点</a></li>
+                            <li><a href="">有多少你不了解的党史知识</a></li>
+                            <li><a href="">中国共产党为什么能夺取全国政权</a></li>
+                            <li><a href="">毛泽东是如何成为马克思主义者的</a></li>
+                            <li><a href="">中国共产党的性质是什么</a></li>
+                        </ul>
+                    </div>
+                    <div class="box5-2">
+                        <a href="http://dangshi.people.com.cn/GB/437103/index.html"><img src="images/wenda.png"
+                                alt=""></a>
+                    </div>
+                </div>
+                <div class="bigBox">
+                    <ul btn='btn' data-target="#a1">
+                        <li class="active">重要会议</li>
+                        <li>重大事件</li>
+                        <li>榜样力量</li>
+                        <li>党史百科</li>
+                    </ul>
+                    <div class="box5" id="a1">
+                        <div>
+                            <div class="box5-3">
+                                <div class="box5-3-left"></div>
+                                <div class="box5-3-right">
+                                    <p>实行在党的纪律面前人人平等的原则</p>
+                                    <span>1981年6月，党的十一届六中全会通过《关于建国以来党的若干历史问题的决议》，总结了新中国成立以后的历史经验，标志着党在指导思想上拨乱反正任务的胜利完成。党的十二大通过的新党章明确规定，实行在党的纪律面前人人平等的原则。</span>
+                                </div>
+                            </div>
+                            <div class="box5-4">
+                                <a href="">
+                                    <p>中共一大到底是哪天闭幕的？</p>
+                                </a>
+                                <a href="">
+                                    <p>争取光明的前途和命运</p>
+                                </a>
+                                <a href="">
+                                    <p>这场“飞行会议”，让中国工农红军有了新通道</p>
+                                </a>
+                                <a href="">
+                                    <p>中共八大：探索社会主义建设道路的开端</p>
+                                </a>
+                            </div>
+                            <div class="box5-more"><a
+                                    href="http://dangshi.people.com.cn/GB/437134/index.html">查看更多>></a></div>
+                        </div>
+                        <div>
+                            <div class="box5-5">
+                                <div class="box5-3">
+                                    <div class="box5-11"></div>
+                                    <div class="box5-3-right">
+                                        <p>长沙和平解放：历史翻开了崭新的一页</p>
+                                        <span>1949年8月，随着长沙和平解放日程日益临近，全市人民开始积极开展迎接解放工作。为庆祝长沙和平解放，迎接解放军入城，全市人民自发组织了迎接解放军联合委员会。</span>
+                                    </div>
+                                </div>
+                                <div class="box5-4">
+                                    <a href="">
+                                        <p>“开天辟地”光辉历程的起点</p>
+                                    </a>
+                                    <a href="">
+                                        <p>中国共产党第一个关于妇女运动的决议</p>
+                                    </a>
+                                    <a href="">
+                                        <p>红一方面军永和成立：中央红军从这里走出</p>
+                                    </a>
+                                    <a href="">
+                                        <p>开国大典：新生的共和国 站起来的人民</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="box5-more"><a
+                                    href="http://dangshi.people.com.cn/GB/437133/index.html">查看更多>></a></div>
+                        </div>
+                        <div>
+                            <div class="box5-5">
+                                <div class="box5-6">
+                                    <div class="box5-9"><img src="images/bangyang1.png" alt=""></div>
+                                    <div class="box5-10">
+                                        <p>曾希圣</p>
+                                        <span>我军情报工作的“创业人”，不修边幅，人称“胡子局长”。“读天书”“发假电”“搞玻璃杯”，屡屡破获国民党军事情报，立下大功。</span>
+                                    </div>
+                                </div>
+                                <div class="box5-7">
+                                    <div class="box5-9"><img src="images/bangyang2.png" alt=""></div>
+                                    <div class="box5-10">
+                                        <p>刘胡兰</p>
+                                        <span>“生的伟大，死的光荣”，毛泽东主席先后两次挥毫泼墨，把这个评价赋予了一位优秀的共产党人、杰出的中华儿女——刘胡兰。</span>
+                                    </div>
+                                </div>
+                                <div class="box5-8"></div>
+                                <div class="box5-6">
+                                    <div class="box5-9"><img src="images/bangyang3.png" alt=""></div>
+                                    <div class="box5-10">
+                                        <p>焦裕禄</p>
+                                        <span>1966年2月1日，河南省政府追认焦裕禄为革命烈士。2009年9月14日，他被评为100位新中国成立以来感动中国人物之一。</span>
+                                    </div>
+                                </div>
+                                <div class="box5-7">
+                                    <div class="box5-9"><img src="images/bangyang4.png" alt=""></div>
+                                    <div class="box5-10">
+                                        <p>毛泽东</p>
+                                        <span>毛泽东的读书志向、读书精神、读书态度和方法，开启了中国共产党人读书治学的一代新风，留下了许多脍炙人口的人间佳话。</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box5-more"><a
+                                    href="http://dangshi.people.com.cn/GB/436985/index.html">查看更多>></a></div>
+                        </div>
+                        <div>
+                            <div class="box5-5">
+                                <div class="box5-3">
+                                    <div class="box5-12"></div>
+                                    <div class="box5-3-right">
+                                        <p>从遵义会议看历史昭示</p>
+                                        <span>在中国共产党百年历程中，生死关头的抉择总是超越时空，给人启迪。从建党到建立新中国，中国共产党走了28年，时间轴中点落在1935年。这年召开的遵义会议，在党的历史上是一个生死攸关的转折点。</span>
+                                    </div>
+                                </div>
+                                <div class="box5-4">
+                                    <a href="http://dangshi.people.com.cn/n1/2021/1203/c436975-32298429.html">
+                                        <p>萧楚女：做一个一直都光明的人</p>
+                                    </a>
+                                    <a href="http://dangshi.people.com.cn/n1/2021/1126/c436975-32292441.html">
+                                        <p>调查研究的光辉典范</p>
+                                    </a>
+                                    <a href="http://dangshi.people.com.cn/n1/2021/1201/c436975-32296106.html">
+                                        <p>党在延安时期的学习</p>
+                                    </a>
+                                    <a href="http://dangshi.people.com.cn/n1/2021/1203/c436975-32298413.html">
+                                        <p>天安门广场的历史变迁</p>
+                                    </a>
+                                    <a name="fff"></a>
+                                </div>
+                            </div>
+
+                            <div class="box5-more"><a
+                                    href="http://dangshi.people.com.cn/GB/436985/index.html">查看更多>></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <script src="js/jquery.min.js"></script> -->
+            <script>
+                //   $("[btn='btn']").children().click(function() {
+                //       // console.log($(this))
+                //       $(this).addClass('active').siblings().removeClass('active')
+                //           // console.log($(this).index())
+                //       var $index = $(this).index()
+                //       var $Id = $(this).parent().data('target')
+                //       console.log($Id)
+                //       $($Id).children().eq($index).show().siblings().hide()
+                //   })
+
+                //   封装
+                $.fn.$btnId = function () {
+                    console.log("调用函数、、、")
+                    $(this).children().click(function () {
+                        $(this).addClass('active').siblings().removeClass('active')
+                        // console.log($(this).index())
+                        var $index = $(this).index()
+                        var $Id = $(this).parent().data('target')
+                        //  console.log($Id)
+                        $($Id).children().eq($index).show().siblings().hide()
+                    })
+                }
+                $("[btn='btn']").$btnId()
+            </script>
+            <div class="sixth">
+                <div class="box6-title"></div>
+                <div class="box6-text">
+                    <div class="box6-1">
+                        <div class="wrap">
+                            <a href="http://dangshi.people.com.cn/GB/437145/437524/index.html" target="_blank"
+                                class="pic1 pic">
+                                <div class="pic_num pic_num1">
+                                    <p>优秀影片展映展播</p>
+                                </div>
+                            </a>
+                            <a href="http://dangshi.people.com.cn/n1/2021/1209/c437524-32303855.html" target="_blank"
+                                class="pic2 pic">
+                                <div class="pic_num pic_num2">
+                                    <p>夺冠</p>
+                                </div>
+                            </a>
+                            <a href="http://dangshi.people.com.cn/n1/2021/1209/c437524-32303849.html" target="_blank"
+                                class="pic3 pic">
+                                <div class="pic_num pic_num3">
+                                    <p>袁隆平</p>
+                                </div>
+                            </a>
+                            <a href="http://dangshi.people.com.cn/n1/2021/1209/c437524-32303843.html" target="_blank"
+                                class="pic4 pic">
+                                <div class="pic_num pic_num4">
+                                    <p>中国机长</p>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="box6-2">
+                        <div class="box6-4">
+                            <a href="http://dangshi.people.com.cn/n1/2021/0520/c436975-32108889.html">
+                                <p>优秀影片展映展播</p>
+                            </a>
+                        </div>
+                        <div class="box6-5">影评</div>
+                        <div class="box6-6">
+                            <div class="box6-6-text">
+                                <ul>
+                                    <li>
+                                        <p>
+                                            <font color="#d9000d">木木：</font>
+                                            <font>红色经典不仅是普通的经典著作，它还蕴含着永不褪色的理想主义光彩。</font>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <font color="#d9000d">远见：</font>
+                                            <font>红色电影看完后，总会被震撼、被激励，深刻明白幸福来之不易，红色精神要薪火相传。</font>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <font color="#d9000d">他山石：</font>
+                                            <font>透过影片看到共产党人骨子里的不屈，我辈应不惧风险，争做民族脊梁。</font>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box6-3">
+                        <ul>
+                            <li>
+                                <a href="https://www.dswxyjy.org.cn/GB/427202/427205/458895/index.html">
+                                    <div class="box6-3-imgbox"> <img src="images/毛泽东的故事.png" alt=""></div>
+                                    <div class="box6-7">
+                                        <img src="images/sheying.png" alt="">《红相册：毛泽东的故事》
+                                    </div>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="https://www.dswxyjy.org.cn/GB/427202/427205/459270/index.html">
+                                    <div class="box6-3-imgbox"> <img src="images/邓小平的故事.png" alt=""></div>
+                                    <div class="box6-7"><img src="images/sheying.png" alt="">《红相册：邓小平的故事》</div>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="https://www.dswxyjy.org.cn/GB/427202/427205/448623/">
+                                    <div class="box6-3-imgbox"> <img src="images/党史上的重要会议.png" alt=""></div>
+                                    <div class="box6-7"><img src="images/sheying.png" alt="">《党史上的重要会议》</div>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="https://www.dswxyjy.org.cn/GB/427202/427205/448473/index.html">
+                                    <div class="box6-3-imgbox"> <img src="images/征途.png" alt=""></div>
+                                    <a name="ggg"></a>
+                                    <div class="box6-7"><img src="images/sheying.png" alt="">《征途》</div>
+
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="seven">
+                <div class="seven-title"></div>
+                <div class="box7-1">
+                    <ul>
+                        <li>
+                            <div class="box7">
+                                <article class="card">
+                                    <header class="card__thumb">
+                                        <a href="https://www.sizhengwang.cn/a/gxxxgcddesjszqhjs/240905/1898661.shtml"><img
+                                                src="images/hudong1.png" /></a>
+                                    </header>
+                                    <div class="card__body">
+                                        <h2 class="card__title"><a
+                                                href="https://www.sizhengwang.cn/a/gxxxgcddesjszqhjs/240905/1898661.shtml">中国农业大学举办学习贯彻党的二十届三中全会精神辅导报告会</a>
+                                        </h2>
+                                        <div class="card__subtitle">中国农业大学</div>
+                                        <p class="card__description">
+                                            9月3日，学校举办学习贯彻党的二十届三中全会精神辅导报告会。学校党委书记钟登华作辅导报告，并就学习贯彻全会精神作部署，中国社会科学院中国式现代化研究院党委书记林建华教授应邀来校作专题报告。
+                                </article>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box7">
+                                <article class="card">
+                                    <header class="card__thumb">
+                                        <a href="https://www.sizhengwang.cn/a/gxxxgcddesjszqhjs/240825/1884206.shtml"><img
+                                                src="images/hudong2.png" /></a>
+                                    </header>
+                                    <div class="card__body">
+                                        <h2 class="card__title"><a
+                                                href="https://www.sizhengwang.cn/a/gxxxgcddesjszqhjs/240825/1884206.shtml">北京大学统战系统学习贯彻党的二十届三中全会精神座谈会举行</a>
+                                        </h2>
+                                        <div class="card__subtitle">北京大学</div>
+                                        <p class="card__description">
+                                            8月19日下午，北京大学统战系统学习贯彻党的二十届三中全会精神座谈会在英杰交流中心月光厅举行。校党委书记郝平，党委副书记、纪委书记，国家监委驻北京大学监察专员顾涛出席。
+                                    </div>
+                                </article>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box7">
+                                <article class="card">
+                                    <header class="card__thumb">
+                                        <a href="https://www.sizhengwang.cn/a/gxxxgcddesjszqhjs/240821/1881315.shtml"><img
+                                                src="images/hudong3.png" /></a>
+                                    </header>
+                                    <div class="card__body">
+                                        <h2 class="card__title"><a
+                                                href="https://www.sizhengwang.cn/a/gxxxgcddesjszqhjs/240821/1881315.shtml">中国矿业大学举行学习贯彻党的二十届三中全会精神省委宣讲团报告会</a>
+                                        </h2>
+                                        <div class="card__subtitle">中国矿业大学</div>
+                                        <p class="card__description">
+                                            8月20日下午，我校在信控学院报告厅举行学习贯彻党的二十届三中全会精神省委宣讲团报告会。江苏省委宣讲团成员、南京大学张海波教授来校作宣讲报告。
+                                    </div>
+                                </article>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box7-1">
+                    <ul>
+                        <li>
+                            <div class="box7">
+                                <article class="card">
+                                    <header class="card__thumb">
+                                        <a href="https://www.sizhengwang.cn/a/gxxxgcddesjszqhjs/240806/1876432.shtml"><img
+                                                src="images/hudong4.png" /></a>
+                                    </header>
+                                    <div class="card__body">
+                                        <h2 class="card__title"><a
+                                                href="https://www.sizhengwang.cn/a/gxxxgcddesjszqhjs/240806/1876432.shtml">同济大学党委理论学习中心组学习党的二十届三中全会精神</a>
+                                        </h2>
+                                        <div class="card__subtitle">同济大学</div>
+                                        <p class="card__description">
+                                            7月19日下午，同济大学党委理论学习中心组召开学习会，专题学习党的二十届三中全会精神，研究部署贯彻落实举措。
+                                    </div>
+                                </article>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box7">
+                                <article class="card">
+                                    <header class="card__thumb">
+                                        <a href="https://www.sizhengwang.cn/a/gxxxgcddesjszqhjs/240806/1876416.shtml"><img
+                                                src="images/hudong5.png" /></a>
+                                    </header>
+                                    <div class="card__body">
+                                        <h2 class="card__title"><a
+                                                href="https://www.sizhengwang.cn/a/gxxxgcddesjszqhjs/240806/1876416.shtml">复旦大学党委常委会传达学习党的二十届三中全会精神</a>
+                                        </h2>
+                                        <div class="card__subtitle">复旦大学</div>
+                                        <p class="card__description">
+                                            “7月19日下午，复旦大学召开党委常委会暨党委理论学习中心组专题学习会，传达学习党的二十届三中全会精神。校党委书记裘新主持会议，传达全会精神和上海市委常委会扩大会议精神，并布置学习贯彻工作。
+                                    </div>
+                                </article>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box7">
+                                <article class="card">
+                                    <header class="card__thumb">
+                                        <a href="https://www.sizhengwang.cn/a/gxxxgcddesjszqhjs/240805/1875498.shtml"><img
+                                                src="images/hudong6.png" /></a>
+                                    </header>
+                                    <div class="card__body">
+                                        <h2 class="card__title"><a
+                                                href="https://www.sizhengwang.cn/a/gxxxgcddesjszqhjs/240805/1875498.shtml">北京邮电大学干部师生深入学习领会党的二十届三中全会精神</a>
+                                        </h2>
+                                        <div class="card__subtitle">北京邮电大学</div>
+                                        <p class="card__description">
+                                            7月19日，北京邮电大学党委理论学习中心组召开集体学习会，专题学习了党的二十届三中全会精神。校党委书记续梅主持会议。
+                                    </div>
+                                </article>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="end">
+            <div class="end-text">
+                <p>学校地址：兰州市安宁区营门村1号</p>
+                <p>制作团队：江流不转&emsp;主创设计：吴鑫煜</p>
+                <p>团队成员：吴鑫煜&emsp;祁国庆</p>
+                <p>&emsp;&emsp;&emsp;&emsp;&emsp;姚建宏&emsp;杨&emsp;洋</p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+
+</html>
